@@ -1,1 +1,1 @@
-![nvim start up looks](./assets/img/startup.png)
+![nvim start up looks](./assets/img/startup.jpg)
