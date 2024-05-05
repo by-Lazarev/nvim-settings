@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   {'phaazon/hop.nvim'},
   {
         'nvim-telescope/telescope.nvim',
@@ -34,14 +35,15 @@ require("lazy").setup({
             "MunifTanjim/nui.nvim", "s1n7ax/nvim-window-picker"
         }
   },
-  {
+ {
       'williamboman/mason.nvim'
   },
-  {
-        'glepnir/dashboard-nvim',
+   {
+        'nvimdev/dashboard-nvim',
         event = 'VimEnter',
         dependencies = {{'nvim-tree/nvim-web-devicons'}}
     },
+ 
     {'hrsh7th/cmp-nvim-lsp-signature-help'}, {
         'linrongbin16/lsp-progress.nvim',
         event = {'VimEnter'},
